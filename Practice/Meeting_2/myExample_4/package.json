@@ -1,0 +1,11 @@
+{
+    "name": "myexample4",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node app4.js",
+        "dev": "node app4.js Tom 26"
+    },
+    "dependencies": {
+        "nodemon": "^2.0.6"
+    }
+}
