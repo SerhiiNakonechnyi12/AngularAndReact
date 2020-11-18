@@ -1,0 +1,25 @@
+{
+  "name": "explorewebpack",
+  "version": "1.0.0",
+  "description": "Simple project for exploring webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "webpack",
+    "nodejs"
+  ],
+  "author": "Serhii Ruban",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "underscore": "^1.11.0"
+  }
+}
