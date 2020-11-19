@@ -1,4 +1,5 @@
-//import { userInfo } from "os";
+"use strict";
+exports.__esModule = true;
 var hello = "Hello world of TS!";
 var x = 12;
 var a;
