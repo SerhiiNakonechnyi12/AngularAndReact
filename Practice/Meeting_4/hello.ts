@@ -1,4 +1,4 @@
-import { userInfo } from "os";
+//import { userInfo } from "os";
 
 var hello: string = "Hello world of TS!";
 var x : number = 12 ;

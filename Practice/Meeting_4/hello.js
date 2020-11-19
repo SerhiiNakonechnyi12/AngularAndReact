@@ -1,6 +1,4 @@
-"use strict";
-exports.__esModule = true;
-var os_1 = require("os");
+//import { userInfo } from "os";
 var hello = "Hello world of TS!";
 var x = 12;
 var a;
@@ -14,7 +12,7 @@ console.log(numbers[1]);
 var colors = ["red", "blue", "green"];
 console.log(colors[2]);
 colors.push("purple");
-console.log(os_1.userInfo[0]);
+console.log(colors.length);
 var Season;
 (function (Seasons) {
     Season[Season["Winter"] = 0] = "Winter";
