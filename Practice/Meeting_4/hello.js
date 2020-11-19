@@ -1,20 +1,20 @@
-import { userInfo } from "os";
-
-var hello: string = "Hello world of TS!";
-var x : number = 12 ;
+"use strict";
+exports.__esModule = true;
+var os_1 = require("os");
+var hello = "Hello world of TS!";
+var x = 12;
 var a;
 a = 17;
 console.log(hello);
 console.log(a);
 a = "Typescript is aaawqqqe";
 console.log(a);
-let numbers: number[] = [2, 6, 7];
+var numbers = [2, 6, 7];
 console.log(numbers[1]);
-let colors : Array<string> = ["red", "blue", "green"];
+var colors = ["red", "blue", "green"];
 console.log(colors[2]);
 colors.push("purple");
-console.log(colors.length);
-
+console.log(os_1.userInfo[0]);
 var Season;
 (function (Seasons) {
     Season[Season["Winter"] = 0] = "Winter";
@@ -26,4 +26,3 @@ var Season;
 var season = Season.Autumn;
 console.log("Now the season is: " + season);
 console.log("But we all wants hot: " + season[3]);
-
