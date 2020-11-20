@@ -1,5 +1,4 @@
 //import { userInfo } from "os";
-
 // var hello: string = "Hello world of TS!";
 // var x : number = 12 ;
 // var a;
@@ -14,7 +13,6 @@
 // console.log(colors[2]);
 // colors.push("purple");
 // console.log(colors.length);
-
 // var Season;
 // (function (Seasons) {
 //     Season[Season["Winter"] = 0] = "Winter";
@@ -26,29 +24,22 @@
 // var season = Season.Autumn;
 // console.log("Now the season is: " + season);
 // console.log("But we all wants hot: " + season[3]);
-
 // var someValue : any;
 // someValue = "How are you?"
-
-// function createUser(firstname:string, surname:string = "Иванов"): void {
-//   console.log(`Firstname: ${firstname}, Surname: ${surname}`);
-// }
-// createUser("Serhii");
-// createUser("Serhii", "Nakonechnyi");
-
-// function sum(x: number, y: number): number {
-//   return x + y;
-// }
-
-// let op: (x: number, y: number) => number;
-// op = sum;
-// console.log(op(2, 5));
-// function multiply(a: number, b: number): number {
-//   return a * b;
-// }
-// op = multiply;
-// console.log(op(2, 5));
-
-class Employee extends User{
-    constructor(public positio)
+function createUser(firstname, surname) {
+    if (surname === void 0) { surname = "Иванов"; }
+    console.log("Firstname: " + firstname + ", Surname: " + surname);
 }
+createUser("Serhii");
+createUser("Serhii", "Nakonechnyi");
+function sum(x, y) {
+    return x + y;
+}
+var op;
+op = sum;
+console.log(op(2, 5));
+function multiply(a, b) {
+    return a * b;
+}
+op = multiply;
+console.log(op(2, 5));
