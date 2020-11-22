@@ -49,6 +49,6 @@
 // op = multiply;
 // console.log(op(2, 5));
 
-class Employee extends User{
-    constructor(public positio)
-}
+// class Employee extends User{
+//     constructor(public positio)
+// }
