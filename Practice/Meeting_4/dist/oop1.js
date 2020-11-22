@@ -44,3 +44,29 @@ var Employee = /** @class */ (function (_super) {
 var teacher = new Employee("teacher", "Serhii", 39);
 teacher.showInfo();
 console.log("Works on position: " + teacher.position);
+var ivanov = {
+    id: 5,
+    name: "Serhii"
+};
+console.log(ivanov.name);
+var Student = /** @class */ (function () {
+    function Student(name, id) {
+        this.name = name;
+        this.id = id;
+    }
+    return Student;
+}());
+function createUser(name, id) {
+    return {
+        name: name, id: id
+    };
+}
+ivanov = createUser("Petr", 7);
+console.log(ivanov.name);
+var vadim = new Employee("dean", "Vadym", 35);
+console.log(vadim.position);
+console.log(vadim.position);
+if (vadim instanceof Employee)
+    console.log(vadim.name + " \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442");
+else
+    console.log(vadim.name + " \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A");

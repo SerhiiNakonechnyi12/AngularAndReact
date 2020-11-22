@@ -31,3 +31,34 @@ class Employee extends User {
 let teacher = new Employee("teacher", "Serhii", 39);
 teacher.showInfo();
 console.log(`Works on position: ${teacher.position}`);
+
+interface IUser{
+    id: number;
+    name: string;
+    age?: number;
+}
+
+let ivanov = {
+  id: 5,
+  name: "Serhii",
+};
+
+console.log(ivanov.name);
+
+class Student implements IUser {
+  constructor(public name: string, public id: number) {}
+}
+
+function createUser(name: string, id: number): IUser {
+    return {
+        name, id
+    }
+}
+ivanov = createUser("Petr", 7);
+console.log(ivanov.name);
+
+let vadim: User = new Employee("dean", "Vadym", 35);
+console.log((<Employee>vadim).position);
+console.log((vadim as Employee).position);
+if (vadim instanceof Employee) console.log(`${vadim.name} работает`);
+else console.log(`${vadim.name} свободный художник`);
