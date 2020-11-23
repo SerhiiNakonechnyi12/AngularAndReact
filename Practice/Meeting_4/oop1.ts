@@ -32,10 +32,10 @@ let teacher = new Employee("teacher", "Serhii", 39);
 teacher.showInfo();
 console.log(`Works on position: ${teacher.position}`);
 
-interface IUser{
-    id: number;
-    name: string;
-    age?: number;
+interface IUser {
+  id: number;
+  name: string;
+  age?: number;
 }
 
 let ivanov = {
@@ -50,9 +50,10 @@ class Student implements IUser {
 }
 
 function createUser(name: string, id: number): IUser {
-    return {
-        name, id
-    }
+  return {
+    name,
+    id,
+  };
 }
 ivanov = createUser("Petr", 7);
 console.log(ivanov.name);
