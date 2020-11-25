@@ -27,10 +27,10 @@ export class ResumeComponent implements OnInit {
     this.resume = new Resume();
     this.resume.title = 'Nakonechnyi Serhii';
     this.resume.description = 'BackEnd/FrontEnd Web Developer';
-    var expirience = new Array('C#', 'ASPNET MVC', 'ASPNET Core');
-    for (var i = 0; i < expirience.length; i++) {
-      this.resume.expirience = expirience;
-    }
+    // var expirience = new Array('C#', 'ASPNET MVC', 'ASPNET Core');
+    // for (var i = 0; i < expirience.length; i++) {
+    //   this.resume.expirience = expirience;
+    // }
 
     //this.resume.expirience = new Array("- C#", "- ASPNET MVC");
     // this.resume.expirience = `
