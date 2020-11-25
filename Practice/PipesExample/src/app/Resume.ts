@@ -3,5 +3,5 @@ export class Resume {
     description: string;
     //expirience: string[];
     expirience: string;
-    skills: string;
+    skills: string[] = [];
 }

@@ -28,7 +28,7 @@ export class ResumeComponent implements OnInit {
     this.resume.title = 'Nakonechnyi Serhii';
     this.resume.description = 'BackEnd/FrontEnd Web Developer';
     // var expirience = new Array('C#', 'ASPNET MVC', 'ASPNET Core');
-    // for (var i = 0; i < expirience.length; i++) {
+    // for (var i = 0; i < expirience.length; i++) {m 
     //   this.resume.expirience = expirience;
     // }
 
@@ -40,8 +40,9 @@ export class ResumeComponent implements OnInit {
     // - React \n
     // - Angular \n
     // - NodeJS`;
-    this.resume.skills = `
-    - Create C# Console and Web Application \n 
-    - Create Web Application`;
+    this.resume.skills; 
+    this.resume.skills.push("Create C# Console and Web Applications"); 
+    this.resume.skills.push("Create Web Application");
+    this.resume.skills.push("Angular");
   }
 }
