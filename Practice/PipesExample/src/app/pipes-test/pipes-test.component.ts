@@ -27,5 +27,5 @@ export class PipesTestComponent implements OnInit {
     this.technologies.push("Azure");
     this.technologies.push("AWS");
   }
-
+  
 }

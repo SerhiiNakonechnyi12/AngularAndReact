@@ -1,5 +1,5 @@
 export class Hobbie {
     title: string;
-    desription: string;
+    description: string;
 }
 
