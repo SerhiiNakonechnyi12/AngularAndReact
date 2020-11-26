@@ -116,12 +116,13 @@ var transports = [];
 transports.push(car_1);
 transports.push(bus_1);
 //console.log(transports);
-// for (var i=0; i < transports.length; i++) {
-//   console.log(transports[i]);
-// };
-for (var index in transports) {
-    console.log(transports[index]);
+for (var i = 0; i < transports.length; i++) {
+    console.log(transports[i]);
 }
+;
+// for (var index in transports){
+//   console.log(transports[index]);
+// }
 // ============================
 // class Car {
 //   name: string;

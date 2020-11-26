@@ -127,13 +127,13 @@ transports.push(bus_1);
 
 //console.log(transports);
 
-// for (var i=0; i < transports.length; i++) {
-//   console.log(transports[i]);
-// };
+for (var i=0; i < transports.length; i++) {
+  console.log(transports[i]);
+};
 
-for (var index in transports){
-  console.log(transports[index]);
-}
+// for (var index in transports){
+//   console.log(transports[index]);
+// }
 
 // ============================
 
