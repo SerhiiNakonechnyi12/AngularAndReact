@@ -125,8 +125,21 @@ let transports: MyTransport[] = [];
 transports.push(car_1);
 transports.push(bus_1);
 
-console.log(transports);
+//console.log(transports);
 
-// transports.display();
+// for (var i=0; i < transports.length; i++) {
+//   console.log(transports[i]);
+// };
 
+for (var index in transports){
+  console.log(transports[index]);
+}
 
+// ============================
+
+// class Car {
+//   name: string;
+//   constructor(name: string) {
+
+//   }
+// }

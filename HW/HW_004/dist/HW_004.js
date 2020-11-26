@@ -115,5 +115,16 @@ var bus_1 = new Bus("Bus", 1, "Bogdan", "12", "Yellow", 15000);
 var transports = [];
 transports.push(car_1);
 transports.push(bus_1);
-console.log(transports);
-// transports.display();
+//console.log(transports);
+// for (var i=0; i < transports.length; i++) {
+//   console.log(transports[i]);
+// };
+for (var index in transports) {
+    console.log(transports[index]);
+}
+// ============================
+// class Car {
+//   name: string;
+//   constructor(name: string) {
+//   }
+// }
