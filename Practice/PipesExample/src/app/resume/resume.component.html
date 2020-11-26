@@ -2,10 +2,14 @@
     <h1>Resume</h1>    
     <div>{{this.resume.title}}</div>
     <div>{{this.resume.description}}</div>
-    <div>{{this.resume.expirience}}</div>
+    <ul>
+        <li *ngFor="let expirience of resume.expirience">{{expirience}}</li>
+    </ul>
     <ul>
         <li *ngFor="let skill of resume.skills">{{skill}}</li>
     </ul>
+    <hr>
+    <hr>
 
    
 
