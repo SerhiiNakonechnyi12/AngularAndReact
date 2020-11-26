@@ -31,9 +31,6 @@ Transport. От него создать 3 производных класса (�
 
 tsc --outfile dist/HW_004.js HW_004.ts -w
 
-
-- перенести в интерфейс авто ,
-- вызвать в методе
 */
 var MyTransport = /** @class */ (function () {
     // private _name: string;
@@ -41,15 +38,15 @@ var MyTransport = /** @class */ (function () {
     // private _color: string;
     // private _price: number;
     function MyTransport(id, name, model, color, price) {
+        // this._name = name;
+        // this._model = model;
+        // this._color = color;
+        //this._price = price;
         this.id = id;
         this.name = name;
         this.model = model;
         this.color = color;
         this.price = price;
-        // this._name = name;
-        // this._model = model;
-        // this._color = color;
-        //this._price = price;
     }
     // id: number;
     // model: string;
@@ -59,73 +56,42 @@ var MyTransport = /** @class */ (function () {
     //   return this._name;
     // }
     MyTransport.prototype.showInfo = function () {
-        console.log("\n        Name: " + this.name + "\n\n        Model: " + this.model + "\n\n        Color: " + this.color + "\n\n        Price: " + this.price + "\n\n      ");
+        console.log("\n        Id: " + this.id + "\n\n        Name: " + this.name + "\n\n        Model: " + this.model + "\n\n        Color: " + this.color + "\n\n        Price: " + this.price + "\n\n      ");
     };
     return MyTransport;
 }());
 var Car = /** @class */ (function (_super) {
     __extends(Car, _super);
-    function Car(vehicle, id, name, model, color, price) {
-        var _this = _super.call(this, id, name, model, color, price) || this;
-        _this.vehicle = vehicle;
-        return _this;
+    function Car(id, name, model, color, price) {
+        return _super.call(this, id, name, model, color, price) || this;
     }
     return Car;
 }(MyTransport));
 var Bus = /** @class */ (function (_super) {
     __extends(Bus, _super);
-    function Bus(vehicle, id, name, model, color, price) {
-        var _this = _super.call(this, id, name, model, color, price) || this;
-        _this.vehicle = vehicle;
-        return _this;
+    function Bus(id, name, model, color, price) {
+        return _super.call(this, id, name, model, color, price) || this;
     }
     return Bus;
 }(MyTransport));
-// function createTransport(
-//   id: number,
-//   name: string,
-//   model: string,
-//   color: string,
-//   price: number
-// ): ITransport {
-//   return {
-//     id,
-//     name,
-//     model,
-//     color,
-//     price
-//   };
-// };
-// let car_1 = {
-//     id: 5,
-//     name: "Tesla",
-//     model: "Model S",
-//     color: "Red",
-//     price: "45000"
-// };
-// let car_2 = {
-//     id: 5,
-//     name: "BMW",
-//     model: "M5",
-//     color: "Black",
-//     price: "75000"
-// };
-var car_1 = new Car("Car", 1, "Tesla", "Model S", "Red", 45000);
-var bus_1 = new Bus("Bus", 1, "Bogdan", "12", "Yellow", 15000);
+var Truck = /** @class */ (function (_super) {
+    __extends(Truck, _super);
+    function Truck(id, name, model, color, price) {
+        return _super.call(this, id, name, model, color, price) || this;
+    }
+    return Truck;
+}(MyTransport));
+var car_1 = new Car(1, "Tesla", "Model S", "Red", 45000);
+var car_2 = new Car(2, "BMW", "X5", "Black", 75000);
+var bus_1 = new Bus(3, "Ruta", "12", "Yellow", 15000);
+var truck_1 = new Truck(4, "Man", "TGA", "White", 29000);
 var transports = [];
 transports.push(car_1);
+transports.push(car_2);
 transports.push(bus_1);
-//console.log(transports);
-for (var i = 0; i < transports.length; i++) {
-    console.log(transports[i]);
+transports.push(truck_1);
+for (var _i = 0, transports_1 = transports; _i < transports_1.length; _i++) {
+    var car = transports_1[_i];
+    console.log("Transport: " + car.id);
+    console.log(car.showInfo());
 }
-;
-// for (var index in transports){
-//   console.log(transports[index]);
-// }
-// ============================
-// class Car {
-//   name: string;
-//   constructor(name: string) {
-//   }
-// }

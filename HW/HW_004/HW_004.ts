@@ -18,9 +18,6 @@ Transport. От него создать 3 производных класса (�
 
 tsc --outfile dist/HW_004.js HW_004.ts -w
 
-
-- перенести в интерфейс авто , 
-- вызвать в методе
 */
 
 class MyTransport implements ITransport{
@@ -33,6 +30,7 @@ class MyTransport implements ITransport{
     // this._model = model;
     // this._color = color;
     //this._price = price;
+    
   }
   // id: number;
   // model: string;
@@ -43,6 +41,7 @@ class MyTransport implements ITransport{
   // }
     showInfo(): void {
         console.log(`
+        Id: ${this.id}\n
         Name: ${this.name}\n
         Model: ${this.model}\n
         Color: ${this.color}\n
@@ -53,12 +52,11 @@ class MyTransport implements ITransport{
 
 class Car extends MyTransport {
   constructor(
-    public vehicle: string,
     id: number,
     name: string,
     model: string,
     color: string,
-    price: number
+    price: number,
   ) {
     super(id, name, model, color, price);
   }
@@ -66,7 +64,18 @@ class Car extends MyTransport {
 
 class Bus extends MyTransport {
   constructor(
-    public vehicle: string,
+    id: number,
+    name: string,
+    model: string,
+    color: string,
+    price: number,
+  ) {
+    super(id, name, model, color, price);
+  }
+}
+
+class Truck extends MyTransport {
+  constructor(
     id: number,
     name: string,
     model: string,
@@ -87,59 +96,18 @@ interface ITransport {
  
 }
 
-// function createTransport(
-//   id: number,
-//   name: string,
-//   model: string,
-//   color: string,
-//   price: number
-// ): ITransport {
-//   return {
-//     id,
-//     name,
-//     model,
-//     color,
-//     price
-//   };
-// };
-
-// let car_1 = {
-//     id: 5,
-//     name: "Tesla",
-//     model: "Model S",
-//     color: "Red",
-//     price: "45000"
-// };
-// let car_2 = {
-//     id: 5,
-//     name: "BMW",
-//     model: "M5",
-//     color: "Black",
-//     price: "75000"
-// };
-
-const car_1 = new Car("Car", 1, "Tesla", "Model S", "Red", 45000);
-const bus_1 = new Bus("Bus", 1, "Bogdan", "12", "Yellow", 15000);
+const car_1 = new Car(1, "Tesla", "Model S", "Red", 45000);
+const car_2 = new Car(2, "BMW", "X5", "Black", 75000);
+const bus_1 = new Bus(3, "Ruta", "12", "Yellow", 15000);
+const truck_1 = new Truck(4, "Man", "TGA", "White", 29000);
 
 let transports: MyTransport[] = [];
 transports.push(car_1);
+transports.push(car_2);
 transports.push(bus_1);
+transports.push(truck_1);
 
-//console.log(transports);
-
-for (var i=0; i < transports.length; i++) {
-  console.log(transports[i]);
-};
-
-// for (var index in transports){
-//   console.log(transports[index]);
-// }
-
-// ============================
-
-// class Car {
-//   name: string;
-//   constructor(name: string) {
-
-//   }
-// }
+for(let car of transports) {
+  console.log(`Transport: ${car.id}`);
+  console.log(car.showInfo());
+}
