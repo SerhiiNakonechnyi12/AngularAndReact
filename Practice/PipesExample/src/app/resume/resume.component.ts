@@ -14,7 +14,7 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
     this.resume = new Resume();
     this.resume.title = 'Nakonechnyi Serhii';
-    this.resume.description = 'BackEnd/FrontEnd Web Developer';
+    this.resume.description = `Hi! I searching work as fullstack web developer!`;
     this.resume.expirience;
     this.resume.expirience.push("C#");
     this.resume.expirience.push("ASPNET MVC");
@@ -22,14 +22,7 @@ export class ResumeComponent implements OnInit {
     this.resume.expirience.push("React");
     this.resume.expirience.push("Angular");
     this.resume.expirience.push("NodeJS");
-    // this.resume.expirience = new Array("- C#", "- ASPNET MVC");
-    // this.resume.expirience = `
-    // - C#
-    // - ASPNET MVC
-    // - ASPNET Core
-    // - React
-    // - Angular
-    // - NodeJS`;
+    
     this.resume.skills; 
     this.resume.skills.push("Create C# Console Applications"); 
     this.resume.skills.push("Create Web Application");

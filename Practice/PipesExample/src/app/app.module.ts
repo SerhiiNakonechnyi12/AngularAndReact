@@ -6,6 +6,8 @@ import { PipesTestComponent } from './pipes-test/pipes-test.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ResumeExpirienceComponent } from './resume-expirience/resume-expirience.component';
+import { ResumeSkillsComponent } from './resume-skills/resume-skills.component';
+import { ResumePhotoLinksComponent } from './resume-photo-links/resume-photo-links.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ResumeExpirienceComponent } from './resume-expirience/resume-expirience
     PipesTestComponent,
     HobbiesComponent,
     ResumeComponent,
-    ResumeExpirienceComponent
+    ResumeExpirienceComponent,
+    ResumeSkillsComponent,
+    ResumePhotoLinksComponent
   ],
   imports: [
     BrowserModule

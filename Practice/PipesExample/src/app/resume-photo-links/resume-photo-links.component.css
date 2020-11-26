@@ -2,10 +2,21 @@
 
 * {
     font-family: 'Nunito', sans-serif;
-    margin: 20px;;
+    margin: 20px;
+    padding: 50px;
 }
 
-h1 {
+img {
+    width: 600px;
+    height: 600px;
+    margin: 2px;
+}
+
+.image {
+    text-align: center;
+}
+
+h2 {
     text-align: left;
     padding: 0px;
     margin: 20px;
