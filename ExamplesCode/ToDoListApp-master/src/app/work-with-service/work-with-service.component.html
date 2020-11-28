@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label>Модель телефона:</label>
+    <input type="text" class="form-control" [(ngModel)]="phoneName"/>
+    <button (click)="addPhone(phoneName)" class="btn btn-primary">Добавить</button>
+</div>
+<table class="table">
+    <tr *ngFor="let phone of phones">
+        <td>{{phone}}</td>
+    </tr>
+</table>

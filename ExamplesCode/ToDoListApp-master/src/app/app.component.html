@@ -1,0 +1,12 @@
+<h2>{{this.title}}</h2>
+<div>Hello world!</div>
+<p>This is a simple Angular application!</p>
+<p>{{getTitle()}}</p>
+<hr/>
+<app-to-do-list></app-to-do-list>
+<hr>
+<p>Font size: {{fontSize}} px</p>
+<app-style-example (fontChanged)="fontSizeSubscriberFcn($event)"></app-style-example>
+<hr>
+<app-work-with-service></app-work-with-service>
+

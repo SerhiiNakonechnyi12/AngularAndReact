@@ -1,0 +1,11 @@
+<div class="form-group">
+        <p>{{innerToDoItem.id}}</p>
+        <div class="form-group">
+                <label>Название задачи:</label>
+                <input type="text" [(ngModel)]="innerToDoItem.name" class="form-control"/>
+        </div>
+        <div class="form-group form-check">
+        <input type="checkbox" [(ngModel)]="innerToDoItem.isCompleted" class="form-check-input" />
+        <label class="form-check-label">Is Complete:</label>
+        </div>
+    </div>

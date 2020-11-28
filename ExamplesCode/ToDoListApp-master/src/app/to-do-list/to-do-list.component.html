@@ -1,0 +1,22 @@
+<div class="toDo">
+    <h3>{{toDoListItem.id}}. {{toDoListItem.name}}</h3>
+    <div>Is Completed: {{toDoListItem.isCompleted}}</div>
+    <img [src]="imageUrl"/>
+    <app-to-do-item-form [innerToDoItem]="selectedJob"></app-to-do-item-form>
+    <hr>
+    <div *ngIf="jobs.length>0">
+        <ul class="list-group">Список дел:
+            <li *ngFor="let job of jobs" class="list-group-item list-group-item-action" (click)="changeStyle(job)" [class.active]="job==selectedJob">
+                {{job.id}}. {{job.name}}
+            </li>
+        </ul>
+    </div>
+    <div [ngSwitch]="car">
+        <p *ngSwitchCase="'Audi'">Сегодня поедем на работу на Audi</p>
+        <p *ngSwitchCase="'BMW'">Сегодня поедем на работу на BMW</p>
+        <p *ngSwitchCase="'Ford'">Сегодня поедем на работу на Ford</p>
+        <p *ngSwitchCase="'Lada'">Сегодня поедем на работу на жигулях</p>
+        <p *ngSwitchDefault>Сегодня поедем на работу пешком</p>
+    </div>
+</div>
+
