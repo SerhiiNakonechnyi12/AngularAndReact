@@ -2,8 +2,25 @@
 <div>Is Completed: {{toDoListItem.isCompleted}}</div>
 <p>This is a simple Angular app!</p>
 <p>{{getTitle}}</p>
-<hr/> -->
-<app-to-do-list></app-to-do-list>
-<div class="toDo">
+<hr> -->
+<!-- <div>
+    <div > 
+        <ul>
+            <li *ngFor="let job of jobs">
+                {{job.id}}.{{job.name}}
+            </li>
+        </ul>
+    </div>
+</div> -->
+<!-- <div *ngIf="loggedIn; else loggedOut">
+    Logged in.
+</div> -->
+<ng-template *ngIf="loggedIn; then loggedIn; else loggedOut">
 
-</div>
+</ng-template>
+<ng-template #loggedIn>
+    Logged in
+</ng-template>
+<ng-template #loggedOut>
+    Login please
+</ng-template>

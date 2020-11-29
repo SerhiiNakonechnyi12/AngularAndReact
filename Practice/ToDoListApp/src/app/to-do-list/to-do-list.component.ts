@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToDoListItem } from "../to-do-list-item";
+import {ITEMS} from '../to-do-list'
 
 @Component({
   selector: 'app-to-do-list',
@@ -7,8 +8,11 @@ import { ToDoListItem } from "../to-do-list-item";
   styleUrls: ['./to-do-list.component.css']
 })
 export class ToDoListComponent implements OnInit {
-  toDoListItem: ToDoListItem; 
-  
+  toDoListItem: ToDoListItem;
+  jobs: ToDoListItem[] = ITEMS;
+
+  loggedIn = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +21,7 @@ export class ToDoListComponent implements OnInit {
       name: "Сделать презентацию на завтра",
       isCompleted: false
     }
+    this.jobs =[];
   }
 
 }
