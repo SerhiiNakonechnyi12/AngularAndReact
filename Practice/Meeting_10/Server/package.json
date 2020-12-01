@@ -1,0 +1,14 @@
+{
+  "name": "serverapp",
+  "version": "1.0.0",
+  "description": "A simple server for calculation two numbers",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run"
+  },
+  "author": "Serhii Nakonechnyi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
