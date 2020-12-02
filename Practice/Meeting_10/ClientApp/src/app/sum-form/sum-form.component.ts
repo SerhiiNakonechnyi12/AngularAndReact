@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
+
+@Component({
+  selector: 'app-sum-form',
+  templateUrl: './sum-form.component.html',
+  styleUrls: ['./sum-form.component.css'],
+  providers: [HttpService],
+})
+export class SumFormComponent implements OnInit {
+  num1: number;
+  num2: number;
+  sum: number;
+  done: boolean;
+  constructor(private httpService: HttpService) {}
+
+  ngOnInit(): void {}
+  sumbmit() {
+    this.httpService.getSum(this.num1, this.num2).subscribe((data: any) => {
+      this.sum = data;
+      this.done = true;
+    });
+  }
+}
