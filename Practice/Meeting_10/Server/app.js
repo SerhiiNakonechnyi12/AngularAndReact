@@ -10,5 +10,5 @@ app.get("/sum", (request, response)=>{
     response.send({result: sum});
 });
 app.listen(3000, ()=>{
-    console.log("Server is up! Listen port 3000")
+    console.log("Server is up! Listen port 3000");
 })
