@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 
+/*
+ - запустить сервер через Run without debuging
+ - запусть клиент ng serve --open
+*/
+
 @Component({
   selector: 'app-sum-form',
   templateUrl: './sum-form.component.html',
