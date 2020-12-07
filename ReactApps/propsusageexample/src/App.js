@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Quote from "./Quote";
+import RandomNumber from "./RandomNumber";
 
 function App() {
+  let quote = "Цитата изветного человека";
+  let author = "Уильям Шекспир";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Quote text={quote} author={author}></Quote>
+      <RandomNumber>min={3} max={10}</RandomNumber>
+    </>
   );
 }
 
