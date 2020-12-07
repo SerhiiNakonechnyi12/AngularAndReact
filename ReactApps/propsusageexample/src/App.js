@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Quote text={quote} author={author}></Quote>
-      <RandomNumber>min={3} max={10}</RandomNumber>
+      <RandomNumber min={3} max={10}></RandomNumber>
     </>
   );
 }
