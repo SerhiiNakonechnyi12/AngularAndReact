@@ -3,7 +3,7 @@ import React from "react";
 export function ListItem(props){
 return <li>{props.name}</li>
 }
-// 19_11
+// 19_11 дописать
 export default function ItemList(props){
     let {title, items} = props.data;
     return(
