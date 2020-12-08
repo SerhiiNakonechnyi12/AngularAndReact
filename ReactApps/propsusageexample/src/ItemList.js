@@ -9,10 +9,10 @@ export default function ItemList(props){
     return(
         <>
             <h3 style={{ color: "darkorange"}}>{title}</h3>
-            <ul>
+            <ul style={{lisrStyleType: "none"}}>
                 {
                 items.map(item => {
-                    return <ListItem name={item}></ListItem>
+                    return <ListItem name={item} key={item}></ListItem>
                 })
             }
             </ul>

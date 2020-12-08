@@ -8,3 +8,8 @@ export default function Quote(props) {
     </>
   );
 }
+
+// Quote.defaultProps = {text: "Hello, world", author: "Serhii N"}
+Quote.defaultProps = {};
+Quote.defaultProps["text"] = "Hello, world";
+Quote.defaultProps["author"] = "Serhii N";
