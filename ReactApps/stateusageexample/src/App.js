@@ -5,7 +5,7 @@ import Button from "./Counter";
 import { CounterBtn, Display } from "./Display";
 import HookBtn from "./hookBtn";
 
-export class App extends React.Component() {
+export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { currentValue: 0 };
@@ -18,7 +18,7 @@ export class App extends React.Component() {
       <div className="App">
         <Button startValue={1} incValue={2}></Button>
         <hr/>
-        <CounterBtn btnValue={2} onClickAct={clickHandler}></CounterBtn>
+        <CounterBtn btnIncValue={2} onClickAct={clickHandler}></CounterBtn>
         <Display dispValue={this.state.currentValue}></Display>
         <hr/>
         <HookBtn></HookBtn>
