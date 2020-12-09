@@ -4,7 +4,7 @@ export default function WriterList(props) {
   let writers = props.data;
   return (
     <>
-      {writers.map((writers) => (
+      {writers.map((writer) => (
         <Writer {...writer}></Writer>
       ))}
       {/* <Writer {...writers[0]}></Writer>
