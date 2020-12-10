@@ -4,7 +4,7 @@ import WriterList from './WriterList';
 import UserForm from './UserForm';
 // import WriterList from './Writer';
 function App() {
-  let writers = [{name: "Kliford", surname: "Simak"}, {name: "Max", surname: "Masterman"}, {name: "Bill", surname: "Geitz"}]
+  let writers = [{name: "Kliford", surname: "Simak"}, {name: "Steve", surname: "Jobs"}, {name: "Bill", surname: "Geitz"}]
   return (
     <div className="App">
       <WriterList data={writers}></WriterList>
