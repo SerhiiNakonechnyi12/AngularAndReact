@@ -39,6 +39,15 @@ export function Lviv(){
     return <h3>Info about Lviv</h3>
 }
 
-export function Product(props){
+export function Staff(props){
+    let department = props.match.params.department;
+    let id = props.match.params.id;
 
+    return (
+        <>
+            <h3>Информация о сотруднике</h3>
+            <div>Отдел: {department}</div>
+            <div>Id: {Id}</div>
+        </>
+    )
 }

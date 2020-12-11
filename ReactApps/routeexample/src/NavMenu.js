@@ -5,8 +5,8 @@ export default function NavMenu(){
     return (
         <>
         <NavLink to="/" className="links">Main</NavLink>
-        <Link to="/news" className="links">News</Link>
-        <Link to="/about" className="links">About</Link>
+        <NavLink to="/news" className="links">News</NavLink>
+        <NavLink to="/about" className="links">About</NavLink>
         </>
     )
 }
