@@ -40,14 +40,28 @@ export function Lviv(){
 }
 
 export function Staff(props){
-    let department = props.match.params.department;
-    let id = props.match.params.id;
+    let department = "Не задан";
+    let id = "Не задан";
+    if(typeof props.match.params.department !== "undefined")
+    department = props.match.params.department;
+    if(typeof props.match.params.id!=="undefined")
+    id = props.match.params.id;
 
     return (
         <>
             <h3>Информация о сотруднике</h3>
             <div>Отдел: {department}</div>
             <div>Id: {id}</div>
+        </>
+    )
+}
+
+export function Product(props){
+    let id=props.match.params.id;
+    return (
+        <>
+        <h2>Product</h2>
+        <div>Id: {id}</div>
         </>
     )
 }

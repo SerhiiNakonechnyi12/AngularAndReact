@@ -13,9 +13,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main}></Route>
           <Route path="/about" component={About}></Route>
-          <Route path="/news" component={News}></Route>
-          {/* <Route component={NotFound}></Route> */}
-          <Route path="/staff/:department/:id" component={Staff}></Route>
+          <Route strict path="/news" component={News}></Route>
+          <Route path="/staff/:department?/:id?" component={Staff}></Route>
+          <Route path="/products/:id(\d+)" component={Product}></Route>
           <Route children={()=><h2>Not found from arrow function</h2>}></Route>
         </Switch>
       </Router>
