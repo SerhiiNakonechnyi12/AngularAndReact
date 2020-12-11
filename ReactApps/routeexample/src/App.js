@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import { Main, About, News, NotFound, Product } from './Main';
+import { Main, About, News, NotFound, Product, Staff } from './Main';
 import NavMenu from "./NavMenu";
 
 

@@ -47,7 +47,7 @@ export function Staff(props){
         <>
             <h3>Информация о сотруднике</h3>
             <div>Отдел: {department}</div>
-            <div>Id: {Id}</div>
+            <div>Id: {id}</div>
         </>
     )
 }
