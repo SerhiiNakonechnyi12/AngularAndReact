@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import NavMenu from '../../routeexample/src/NavMenu';
+import { Switch, Route } from 'react-router-dom';
+import PostList from './pages/PostList';
+import  Main  from './pages/Main';
+import  NotFound  from './pages/NotFound';
+
+/*
+Пример в Example.
+
+*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavMenu></NavMenu>
+      <Switch>
+        <Route exact path="/" component={Main}></Route>
+        <Route path="/posts" component={PostList}></Route>
+        <Route component={NotFound}></Route>
+      </Switch>
+    </>
   );
 }
 

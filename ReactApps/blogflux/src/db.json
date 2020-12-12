@@ -1,0 +1,16 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "author": "Serhii Ruban",
+            "title": "Flux pattern in React",
+            "text": "Главная идея в использовании диспетчера для организации прямого потока обработки сообщений в приложении"
+        },
+        {
+            "id": 2,
+            "author": "Serhii N",
+            "title": "Qwerty test",
+            "text": "Qwerty text 12313131 aaaa"
+        }
+    ]
+}
