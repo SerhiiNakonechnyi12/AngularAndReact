@@ -1,0 +1,22 @@
+{
+  "name": "serverapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubanSA/SimpleNodeJSServer.git"
+  },
+  "author": "Serhii Ruban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubanSA/SimpleNodeJSServer/issues"
+  },
+  "homepage": "https://github.com/RubanSA/SimpleNodeJSServer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

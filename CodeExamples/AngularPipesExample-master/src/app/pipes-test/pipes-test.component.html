@@ -1,0 +1,28 @@
+<h3>Pipes-test component works!</h3>
+<div>Uppercase: {{message | uppercase}}</div>
+<div>Lowercase: {{message | lowercase}}</div>
+<div>Number: {{pi | number }}</div>
+<div>Curreny: {{pi | currency }}</div>
+<div>Percent: {{pi | percent }}</div>
+<div>Slice: {{message | slice : -10 : -1 }}</div>
+<div>Slice: {{message | slice : 11  }}</div>
+<div>Slice: {{message | slice : 11 : 15  }}</div>
+<div>Number : "1.1-3": {{x | number : "1.1-3"  }}</div>
+<div>Number : "1.1-3": {{x | number : "1.1-3" : "ru"  }}</div>
+<div>Number : "1.3-3": {{x | number : "2.3-3"  }}</div>
+<div>Currency ("UAH"): {{pi | currency : "UAH" }}</div>
+<div>Currency ("UAH" : "code"): {{pi | currency : "UAH" : "code" }}</div>
+<div>Currency ("UAH" : "symbol"): {{pi | currency : "UAH" : "symbol" }}</div>
+<div>Currency ("UAH" : "symbol-narrow"): {{pi | currency : "UAH" : "symbol-narrow" }}</div>
+<div>Currency ("UAH" : "Грн."): {{pi | currency : "UAH" : "Грн." }}</div>
+<div>Currency ("UAH" : "Грн." : "1.1-2" : "ru"): {{pi | currency : "UAH" : "Грн." : "1.1-2" : "ru"}}</div>
+<div>Currency ("UAH" : "symbol-narrow" : "1.1-2" : "ru"): {{pi | currency : "UAH" : "symbol-narrow" : "1.1-2" : "ru"}}</div>
+<h3>Date Pipe Example</h3>
+<div>Date from string (short): {{dateFromString | date : "short"}}</div>
+<div>Date from object (short): {{dateFromObject | date : "short"}}</div>
+<div>Date from object (short): {{dateFromNumber | date : "short" : "UTC" : "ru"}}</div>
+<div>Pipe chain example: {{message | slice : -10 : -1 | uppercase}}</div>
+<hr>
+<div>Join Example: {{technologies | join }}</div>
+<div>Join Example: {{technologies | join : 2 }}</div>
+<div>Join Example: {{technologies | join : 2 : 4 }}</div>
